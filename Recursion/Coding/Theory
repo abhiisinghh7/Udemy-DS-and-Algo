@@ -1,0 +1,43 @@
+Linear Recursion:
+If it is calling itself only one time.
+Now, to create a Recursive function, we should first create a recurrence relation
+One, for large value of 'n', other for the smaller value of 'n'(Terminating Condition) 
+Size of the memory required depends on the value you are passing. It depends on the number of calls required and the activation records created and destroyed in the stack during the execution of the function.
+When you have to return multiple values in Recursion, use Static Variables.
+Sum=(n-1)+n
+Fact(n-1)*n
+Pow(x,n-1)*x
+Evaluating Taylor series for 'n' terms, total multiplications requires = (n(n+1)) = O((n^2))
+--------------------------------------------------------------------------
+Types of Recursion:
+1. Tail Recursion
+If the recursive function is calling itself and that call is the last statement in the function.
+After that call, there is no statement to execute.
+All operations are called at the 'Calling time' of the function.
+Utilizes activation records in the Stack.
+In case of Tail Recursion, loop is better in terms of Space Cosumption.
+-----------------------------------------------------------------------------
+2. Head Recursion
+All the processing takes place after the Recursive call.
+No statement/operation before the call.
+All operations happen at the 'returning time' of the function.
+Cannot be easily converted in the form of a loop.
+-----------------------------------------------------------------------------
+3. Tree Recursion
+If a recursive function is calling itself more than once.
+No. of Calls or Activation records created = (m^(n+1))-1)
+m->Number of times the recursive function called itself in the code
+n->Value that is passed in the function
+TC= O((2^n))
+Space Complexity depends on the height of the tree/Stack in this case = (n + 1)
+SC= O(n)
+-----------------------------------------------------------------------------
+4. Indirect Recursion
+There are more than one recursive function and they are calling each in a circular fashion.
+eg A calls B, B calls C,C calls A and so on...
+If any one function fails it returns to the first starting call.
+------------------------------------------------------------------------------
+5. Nested Recursion
+Recursive function will pass parameter as a recursive call.
+Recursion inside recursion.
+Expands into a huge tree.

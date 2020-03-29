@@ -1,0 +1,53 @@
+You now have access to a new git command, named git pull-request. You don’t have to interact with GitHub anymore:
+$ git branch new-feature
+$ <edit your files>
+$ git commit -a -m 'Here is a new feature'
+$ git pull-request
+-------------------------------------------------------------------------
+Updating pull requests
+We just covered creating pull requests, but what about updating them?
+$ git pull-request
+--------------------------------------------------------------------------
+I did a git commit but I have not pushed it to the repository yet. 
+So when I do git status, I get '# Your branch is ahead of 'master' by 1 commit.
+So if I want to roll back my top commit, can I just do:
+git reset --hard #IDoflastcommit
+----------------------------------------------------------------------------
+fetch list of commits:
+git log
+copy needed commit hash and paste it for checkout:
+git checkout fd6cb176297acca4dbc69d15d6b7f78a2463482f
+-----------------------------------------------------------------------------
+git blame to see all the dates for commits by each line
+-----------------------------------------------------------------------------
+git diff - Show changes between commits
+git diff [old commit id] [new commit id]
+-----------------------------------------------------------------------------
+$ git fetch remotename
+# Fetches updates made to a remote repository
+$ git merge remotename/branchname
+# Merges updates made online with your local work
+$ git pull remotename branchname
+# Grabs online updates and merges them with your local work
+$ git pull
+# Fetch from and integrate with another repository or a local branch
+-------------------------------------------------------------------------------
+$ git fetch origin pull/ID/head:BRANCHNAME
+Fetch the reference to the pull request based on its ID number, creating a new branch in the process.
+[master] $ git checkout BRANCHNAME
+Switch to the new branch that's based on this pull request:
+> Switched to a new branch 'BRANCHNAME'
+--------------------------------------------------------------------------------
+Add a connection to your friend’s version of the github repository, if you haven’t already.
+$ git remote add myfriend git://github.com/myfriend/the_repo
+Pull his/her changes.
+$ git pull myfriend master
+Push them back to your github repository.
+$ git push
+The pull request on github will be automatically closed.
+
+
+
+
+
+
