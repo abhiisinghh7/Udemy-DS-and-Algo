@@ -1,0 +1,5 @@
+Static Variables in Recursion
+Static Variables are created inside the code section.
+Created only once at the loading time of the program.
+Only one single copy of the variable is inside the program.
+Global variable is also created in the code section.
