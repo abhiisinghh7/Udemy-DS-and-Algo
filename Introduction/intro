@@ -1,2 +1,16 @@
 Data Structure- Arrangement of Data
+CPU - Execute programs
+Main Memory- Temporary memory or Working memory
+HDD  -  Primary Storage or Permanent Storage
+	Data File or Progra File
+First open MS Word- Moves to Main memory, and so does the data moves to Main memory
+Every application in the system deals with data that resides in the main memory
+Data Structures are formed in main memory during the running of a program.
+Data- Images/Multi-media
+Pulling data from HDD to Main memory during execution requires Data Structure.
+Operational Data- Data used daily.
+Legacy Data- Historical Data, not used regularly or Data Warehouse
+Data Warehouse- Data Mining Algorithms.
+Big Data- Huge sized data accumlated on Internet.
 
+	

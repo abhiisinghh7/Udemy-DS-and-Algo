@@ -1,0 +1,20 @@
+Physical Data Structures
+These data structures define how the memory is allocated
+#Arrays
+Fixed Size or Static
+Created inside Stack or Heap
+-----------------------------------------------------------------
+#Linked List
+Dynamic data Structure
+Length is variable
+Created in Heap
+--------------------------------------------------------------------
+-------------------------------------------------------------------
+Logical Data Structure
+Implemented using Physical Data Structures.
+Stack- Linear LIFO
+Queues - Linear FIFO
+Trees - Non-Linear 
+Graphs -Non-Linear
+Hash Tables -Tabular or Linear
+

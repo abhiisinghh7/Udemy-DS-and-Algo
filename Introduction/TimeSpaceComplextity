@@ -1,0 +1,21 @@
+Time Complexity
+
+Array
+'n' elements, TC= O(n)
+If nested-for loops, TC= O(n^2)
+2nd case, TC=0(((n^2)-n)/2)
+If dividing the list by 2, TC=O(log n)
+-------------------------------------------------
+Matrix(n*n)
+All elements,TC= O(n^2)
+-------------------------------------------------
+When you're declaring a variable, it is considered for Time Complexity.
+if you are intializing it to a particular value then it is considered.
+eg 
+int a;
+NO
+eg
+a = 3;
+YES
+Consider every statement as one unit of time.
+

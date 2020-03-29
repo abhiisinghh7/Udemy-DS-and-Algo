@@ -1,0 +1,9 @@
+Abstract Data Type
+Data Type-Representation and operation of Data
+'int' data: Arithmetic and Relational operations are allowed on int data.
+Abstract means hiding internal details.
+For storing List: 
+1 Space
+2 Capacity
+3 Size
+

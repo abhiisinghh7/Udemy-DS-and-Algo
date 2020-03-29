@@ -1,0 +1,27 @@
+Static vs Dynamic Memory Application
+Memory divided into Bytes and every byte has it's address.
+First prgram/Code brought to Main memory called Code section
+In C++ the space taken by 'int' depends on the compiler and the OS
+-------------------------------------------------------------------
+First the memory taken by int or float variable is allocated in the Stack
+main() is in the Code section
+In Stack the portion of memory fiven to the function:
+Stack frame or Activation record of function.
+Size of memory required decided by Compiler decided at Compile time- Static Memory
+----------------------------------------------------------------------
+Topmost activating record belongs to currently executing function.
+(The section of memory is stored inside a Stack)
+Stack memory is type of organized memory
+Memory automatically created and destroyed when function ends.
+----------------------------------------------------------------------
+How Heap memory is utilised ?
+Heap used:
+1)Used for organized or unorganized memory
+2)Treated like a resource
+Program can't directly access heap memory.
+Accessed using Pointers.
+The amount of memory taken by pointer depends on the size of the integer.
+The pointer variable is stored in Stack and the address of the memory that it points to in the Heap section is the value of the pointer.
+'new' in C++ and 'malloc' in C points to memory created in Heap.
+Memory in heapp is not lost and it is deallocated.
+So we delete the heap memory or release it else memory will be still belonging to the program, on continuing this for multiple times within the same program, that memory is lost known as Memory leak and would result in usage og the Heap memory and no more memory would be available for use.
