@@ -1,0 +1,24 @@
+Time Complexity
+
+void fun1(int n)
+{
+if(n > 0)
+{printf("%d",n);
+fun1(n-1);}
+}
+
+Total time= T(n)= {T(n-1)+ 1 for n>0
+		  {0         for n=0
+T(n)=T(n-1)+ 1
+T(n)=T(n-2)+ 2
+T(n)=T(n-3)+ 3
+.
+.
+.
+T(n)=T(n-k)+ k
+Assume (n-k)=0
+So, n=k
+T(n)=T(n-n)+ n
+T(n)=T(0)+ n
+T(n)=n + 1
+Time taken would be 'No. of times function is called + 1'

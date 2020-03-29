@@ -1,0 +1,15 @@
+Recursive function has two phases:
+1. Calling phase
+2. Returning Phase
+Recursive Function:
+1. Calls itself
+2. Base condition + Terminating condition
+void fun(int n){
+if(n>0){
+1.//Executed at calling time
+2.fun(n-1);
+3.//Executed at returning time
+}}
+Once the recursive function is called during Calling time, it's activation record is created inside the Stack. Then while returning, the record is deleted.
+#Tracing Tree or Recursive Tree
+
