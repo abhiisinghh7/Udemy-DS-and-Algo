@@ -1,0 +1,30 @@
+Properties of Array:
+1. Array Space
+2. Size
+3. Length(Number of Elements)
+Declaring an Array:
+1. int A[10];
+2. int *A; A=new int[size];
+-----------------------------------------------------------------
+Operations:
+1. Display
+for(i=0;i<length;i++)
+{printf(A[i]);}
+
+2. Add/Append
+A[length]=x;
+length++;
+TC=constant(as degree of function is zero.)
+
+3. Insert(at a given index)(15 at 4th position)
+for(i=length;i>index;i--)
+{A[i]=A[i-1];}
+A[index]=x;
+length++;
+
+4.Delete(index)
+x=A[index];
+for(i=index;i<length-1;i++)
+{A[i]=A[i-1];}
+length--;
+Time: min=2(O(1)), max=n+2(O(n))

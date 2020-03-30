@@ -1,0 +1,18 @@
+Linear Search
+for(i=0;i<length;i++)
+{if(key==A[i])
+return i;}
+return -1;
+TC : min=1(O(1)), max=n(O(n))
+Average Time={((n*(n+1))/2)/n}=(n+1)/2 = O(n)
+Transposition-If key element is found, swap that key element with A[i].
+If the element is found, it is moved one step forward, so that next time it can be searched faster.
+for(i=0;i<length;i++){
+if(key==A[i])
+{swap(A[i],A[i-1]);
+return i-1;}}
+Move to Head/Front : 2nd Method, If the key element is found swap it with the 1st element.
+for(i=0;i<length;i++){
+if(key==A[i])
+{swap(A[i],A[0]);
+return 0;}}
