@@ -1,0 +1,11 @@
+Row Major Mapping
+Go from Left to Right while accessing the index.
+2D Array mapped to one 1D Array row. The rows are arranged adjacently.
+Address A[i][j]= L0 + [i*n + j]*w {If index starts from 1 then replace i and j by (i-1) and (j-1)}
+n=No. of elements in the row
+----------------------------------------------------------------------------------------------
+Column Major Mapping
+Go from right to left while accessing the index.
+2D Array mapped to one 1D Array row. The columns are arranged adjacently.
+Address A[i][j]= L0 + [j*m + i]*w {If index starts from 1 then replace i and j by (i-1) and (j-1)}
+m=No. of elements in the column

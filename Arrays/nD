@@ -1,0 +1,18 @@
+nD Array Formula
+Row Major Mapping:
+Address (A[i1][i2][i3][i4])= L0 + [i1*d2*d3*d4 + i2*d3*d4 + i3*d4 + i4]*w 
+			   = L0 + {Sigma P(1->n)}[ip * {pie  q(p+1->n)}dq]*w
+----------------------------------------------------------------------------
+Column Major Mapping
+Address (A[i1][i2][i3][i4])= L0 + [i4*d1*d2*d3 + i3*d1*d2 + i2*d1 + i1]*w
+---------------------------------------------
+TC = O(n)
+Horner's Rule to reduce the number of Multiplications.
+
+FOR 3-D Array:
+
+Row Major Mapping
+Address(A[i][j][k])= L0 + [i*m*n + j*n + k]*w
+Column Major Mapping
+Address(A[i][j][k])= L0 + [k*l*m + j*l + i]*w
+

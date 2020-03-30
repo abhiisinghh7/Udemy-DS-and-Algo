@@ -1,0 +1,34 @@
+Memory allocated contiguously.
+Static Memory:
+Static- Size of the array decided at compile time but the memory is allocated during run time.
+Activation record inside Stack.
+In C, size of the array has to be decided at compile time and not run time.
+In C++, we can create an array of any size at run time.
+eg, In C++, cin>>n, B[n];
+int *p;
+p = new int[5] //Memory of size 5 created inside Heap and 'p' points to that
+In C++, delete []p;
+'new' is operator inside C++
+In C,
+p = (int*) malloc(5*sizeof(int)) //malloc allocated block of memory in Heap
+free(p); //	To release memory
+If used memory not released, causes Memory leak problem.
+Malloc function returns void type of Pointer.
+Same Array can't be increased in size, as memory allocated to the Array is contiguous.
+Memory for 2D Array will be allocated as a 1D Array and contiguous memory.
+-----------------------------------------------------------------------------------------------------------------------------
+How to get 2D Array:
+1) Linear memory allocation in the form of 1D Array but treat it like 2D Array.
+2) Single pointer Array each pointing to a 1D array.
+3) Double Pointer(int **A;), Then take Array of pointer of type integer(A=new int*[3];)
+	A[0]=new int[4];A[1]=new int[4];A[2]=new int[4];
+	Entire Structure inside Heap, only double pointer inside Stack.
+Use nested-for to access 2D Arrays.
+----------------------------------------------------------------------------------------------------------------------------------
+Memory for the Variable is allocated at Execution.
+Address of the location, known at Run time, known as Data Binding.
+Add(A[i])=L0+i*w or (i-1)*{If arrary index starts from 1}
+L0=Base Address
+i=Index
+w=Size of Data Type
+----------------------------------------------------------------------------
