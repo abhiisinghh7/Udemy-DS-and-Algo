@@ -8,6 +8,8 @@ Sum=(n-1)+n
 Fact(n-1)*n
 Pow(x,n-1)*x
 Evaluating Taylor series for 'n' terms, total multiplications requires = (n(n+1)) = O((n^2))
+Excessive REcursion-> When a recursion calls itself more than once.
+Memoization->Storing the value of Function calls, to avoid repetetive calls for same parameters. 
 --------------------------------------------------------------------------
 Types of Recursion:
 1. Tail Recursion

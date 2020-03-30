@@ -1,11 +1,14 @@
 //Factorial of N
 int fact(int n)
+//Recursion
 {
 if(n==0)
 return 1;
 return fact(n-1)*n;
 }
 int Ifact(int n)
+//Iterative Method
+//TC=O(n)
 {
 int f=1,i;
 for(i=1;i<=n;i++)

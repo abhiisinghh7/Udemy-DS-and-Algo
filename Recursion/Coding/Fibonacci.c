@@ -1,6 +1,8 @@
 //Fibonacci
 #include <stdio.h>
 int fib(int n)
+//Iterative Method
+//TC=O(n)
 {
 int t0=0,t1=1,s=0,i;
 if(n<=1) return n;
@@ -13,12 +15,17 @@ t1=s;
 return s;
 }
 int rfib(int n)
+//Recursion logic
+//Excessive Recursion
+//TC=O((2^n))
 {
 if(n<=1)return n;
 return rfib(n-2)+rfib(n-1);
 }
 int F[10];
 int mfib(int n)
+//Memoization
+//TC=O(n)
 {
 if(n<=1)
 {
