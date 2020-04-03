@@ -1,8 +1,12 @@
+$ echo "#Practice Problems" >> README.md
+To initialize empty git repository
+$git init
 To add this file we will type
 $ git add .
 $ git commit -m 'Message'
 $ git push origin master
-
+To add the directory on GitHub:
+$ git remote add origin http://github.com/your_username/myproject.git
 First he would have to download the whole repository in which the fileis present into his system.
 $ git clone https://github.com/your_username/myproject.git
 If the first user wish to see the changes, then he can see it by typing:

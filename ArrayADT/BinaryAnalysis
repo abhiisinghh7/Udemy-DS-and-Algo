@@ -1,0 +1,17 @@
+We get a tracing tree from analysing a Binary Search.
+Best case: (Min)= O(1)
+Worst case: (Max)= O(log n)
+For Average case analysis: 
+Total time taken in all possible cases = sigma(i=1 to i=log n)[i*(2^i)]
+Total cases = n
+Average time case = log n 
+E = I + 2n 
+E->Edges, I->Sum of the path of all internal nodes, n-> Number of nodes
+Square nodes indicate unsucessful search.
+e = 1+ i
+e= Number of external nodes
+i= Number of internal nodes
+Average(n) for sucessfull= 1 + (I/n) 
+Average(n) for unsucessfull= [E/(n + 1)]
+E= n(log n)
+
