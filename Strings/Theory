@@ -1,0 +1,26 @@
+Every character has codes that every electronic device supports.
+ASCII characters for english language: 65:A - 90:Z, 97:a - 122-z
+Unicodes symbols: 48:0 - 57:9  
+Total 128 ASCII codes. Total 7 bits are required to represent them.
+char temp; //Takes 1 byte of memory
+temp = 'A';
+Inside memory value of ASCII code is stored.
+printf("%d",temp); //Will print A
+printf("%c",temp); //Will print 65
+cout<<temp; //Print A
+String of characters:
+char X[5]; //Declaration
+char X[] = {'A','B','C','D','E'}; // Declaration and Initialization
+char X[] = {65,66,67,68,69}; // Declaration and Initialization
+char name[10]= {'J','O','H','N'};
+char name[10]= {'J','O','H','N','\0'};
+char name[]= {'J','O','H','N','\0'};
+char name[]= "John";
+char *n = "John";//This is a created inside heap whereas n is a pointer created inside stack pointing at the string location in the heap.
+To print a String:
+char name[10]= {'J','O','H','N','\0'};
+printf("%s",name); //Stops beacuse of '\0'
+scanf("%s",name); //Writes '\0' and automatically stores it.
+scanf only reads one string meaning a single word and not multiple words string.
+Continous spaces are called 'Whitespaces'.
+gets(name); //Reads string with multiple words.

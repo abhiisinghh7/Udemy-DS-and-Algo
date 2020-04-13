@@ -1,0 +1,31 @@
+Question 1:
+Suppose  you  are  given  an  array  s[1….n] and a 
+Procedure reverse ( s, I , j ) which  reverse  the  order of  elements  in  between position  I  and j (both inclusive). 
+What  does  the  following  the  sequence do,  where  1 ≤ k ≤  n:
+reverse (s,1,k) ; 
+reverse (s,k+1,n) ; 
+reverse (s, 1, n) ; 
+Answer: rotates s left by k position
+------------------------------------------------------------------------------------------------
+Question 2:
+A program p reads in 500 integers in the range (0,100) representing the scores of 500 students.
+if prints the frequency of each score above 50, what would be the best way for p to store the frequencies ?
+Answer: An array of 50 numbers
+------------------------------------------------------------------------------------------------
+Question 3:
+Let a be array containing n integers in increasing order.The following algorithm determines whether there are two distinct numbers in the array whose difference is a specified numbers s < 0.
+i = 0; j=1; 
+while  (j < n) { 
+if  (E)  j++; 
+else  if  (a[j] –a[i]= = s) break; 
+else i++; }
+If  (j < n ) printf  (“yes”) 
+Answer: a[j]-a[i] < s
+-------------------------------------------------------------------------------------------------
+Question 4:
+What is the time taken to find any element from an Array of elements, which is neither maximum nor minimum.
+Answer: O(1)
+-------------------------------------------------------------------------------------------------
+Question 5:
+what is the time taken to find the second largest element in a Array ?
+Answer: O(n)

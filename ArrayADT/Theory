@@ -28,3 +28,8 @@ for(i=index;i<length-1;i++)
 {A[i]=A[i-1];}
 length--;
 Time: min=2(O(1)), max=n+2(O(n))
+------------------------------------------------------------------
+Hash Table 
+-> Also known as Bitset
+-> Table takes constant time.
+-> Takes a lot of space as it's an array with the length of the largest element/ upper limit.
