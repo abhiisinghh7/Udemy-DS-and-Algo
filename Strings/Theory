@@ -24,3 +24,13 @@ scanf("%s",name); //Writes '\0' and automatically stores it.
 scanf only reads one string meaning a single word and not multiple words string.
 Continous spaces are called 'Whitespaces'.
 gets(name); //Reads string with multiple words.
+How to check if a string is a Palindrome:
+1) Reverse
+2) Compare
+Setting the bit 'on' in memory is called as Merging.
+Checking if the bit is 'on' or 'off' is called Masking.
+Anagrams are 2 sets of strings formed using same sets of alphabets.
+State Space Tree- Which shows us all the combinations and the leaves are the results.
+Backtracking- Going back and taking other possible routes.
+Brute Force- Finding out all possible permutations.
+We have to use Recursion for Backtracking and with the help of Backtracking we are performing Brute Force.
