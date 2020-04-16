@@ -1,0 +1,24 @@
+Question 1:
+In a compact single dimensional array representation for lower triangular matrices ( i.e all the elements above the diagonal are zero) of size n x n , non-zero elements(i.e elements of the lower triangle) of each row are stored one after another , starting from the first row, the index of the (i, j)th element of the lower triangular matrix in this new representation is:
+Answer: [(i(i-1))/2]+(j-1)]
+----------------------------------------------------------------------
+Question 2:
+An  n x n  array  v is  defined as follows:
+v[i,j] = i-j for all i,j, 1≤i ≤ n , 1≤j ≤ n 
+The sum of the elements of  the array v is:
+Answer: 0
+-----------------------------------------------------------------------
+Question 3:
+Let A be a square matrix of size n x n. Consider the following pseudocode. What is the expected output?
+C = 100;
+for i=1 to n do
+for j=1 to n do
+{
+Temp = A [i][j] + C
+A[i][j] = A[j][i];
+A[j] [i] = Temp — C;
+}
+for i=1 to n do
+for j =1 to n do print (A[i][j]);
+Answer: The Matrix A itself
+

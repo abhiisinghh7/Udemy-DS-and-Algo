@@ -1,0 +1,38 @@
+Diagonal Matrix:
+M[i,j]=0 for i != j;
+Store the non-zero elements in an Array.
+----------------------------------------------------------------
+Lower Triangular Matrix:
+M[i,j] != 0 for i >= j
+M[i,j] = 0 for i < j
+Total Non-Zero elements= [(n(n+1))/2]
+Total Zero elements= [(n(n-1))/2]
+To fill all elements in an Array:
+1) Row-Mapping: Entering elements row by row
+Index[A(i,j)]= [(i(i-1))/2]+(j-1)]
+2) Column-Mapping: Entering elements column by column
+Index[A(i,j)]= [(n(j-1) - ((j-2)(j-1)/2)]+(i-j)
+-----------------------------------------------------------------Upper Triangular Matrix:
+M[i,j] = 0 for i > j
+M[i,j] != 0 for i <= j
+Total Non-Zero elements= [(n(n+1))/2]
+Total Zero elements= [(n(n-1))/2]
+To fill all elements in an Array:
+1) Row-Mapping: Entering elements row by row
+Index[A(i,j)] = [(n*(i-1))-((i-1)(i-2)/2)]+ (j-i)
+2) Column-Mapping: Entering elements column by column
+Index[A(i,j)] = [(n*(j-1) - (j*(j-1)/2)]+(i-1)
+-----------------------------------------------------------------
+Symmetric Matrix: M[i,j]= M[j,i]
+We only need to store elements in Upper Triangular or elements in Lower Triangular.
+-----------------------------------------------------------------
+Tri-diagonal Matrix:
+Main Diagonal: i - j = 0 # Index (A[i][j]) = (n + i - 2)
+Upper Diagonal: i - j = -1 # Index (A[i][j]) = (2n + i - 2)
+Lower Diagonal: i - j = 1 # Index (A[i][j]) = i - 1
+M[i,j] = 0 for |i-j| > 1
+M[i,j] != 0 for |i-j| <= 1
+-----------------------------------------------------------------
+Toeplitz Matrix
+A matrix whose diagonal elements are identical.
+
