@@ -1,0 +1,7 @@
+Types of Representataion:
+1)Co-ordinate List/ 3 Column representation
+Consists of Row,Column and Element.
+
+2)Compressed Sparse Row
+Represented using three Arrays
+
