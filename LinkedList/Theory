@@ -1,0 +1,40 @@
+Problem of Arrays: Size is fixed.
+Linked List doesn't have fixed size.
+Create a node whenever you want to enter an element.
+Easy to insert or delete elements by interchanging links.
+Node is having Data and Pointer to next node.
+struct Node{int data; struct Node *next;};
+//The structure is having a pointer of it's own type. This is called as Self-Referential structure.
+----------------------------------------------------------------------------------------------------------------------------------------
+Difference between class and Structure:
+1) In Class everything by default is private.
+2) In Structure everything by default is public.
+In any compiler, Size of the pointer is same as the size taken by integer.
+----------------------------------------------------------------------------------------------------------------------------------------
+struct Node *p; //Pointer created inside Stack
+p=(struct Node*)malloc(size of(struct Node)); //In C
+p = new Node; // In C++
+p->data=10;
+p->next=0;
+struct Node *p,*q;
+q = p;
+q =p->next;//q points at next node of p
+p=p->next; //p is now pointing at next node of previous 'p'
+struct Node *p=NULL; //Not pointing anywhere
+if(p==NULL)//if(p==0)//if(!p)//To check if is not pointing anywhere
+In C/C++ 0 means False and any other Non-zero value means True.
+if(p->next==NULL)//Check if 'p' is the last node.
+-----------------------------------------------------------------------------------------------------------------------------------------
+To traverse entire Linked List:
+while(p!=NULL){
+p=p->next;}
+-----------------------------------------------------------------------------------------------------------------------------------------
+Binary Search not suitable for Linked List as we can't reach the middle of the list.
+To imporove Linear Search: 
+1)Transposition - Not suitable for Linked list as we avoid movement of data, we prefer movement of node.
+2)Move to Head - Move the node to be searched at the first position or starting of the Linked List.
+------------------------------------------------------------------------------------------------------------------------------------------
+Insertion in a Linked List:
+1)Insert before the first place
+2)Insert at a given position
+
