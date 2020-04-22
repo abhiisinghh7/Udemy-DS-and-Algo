@@ -1,0 +1,64 @@
+Question 1:
+Linked lists are not suitable data structures of which one of the following problems?
+Answer: Binary Search
+-------------------------------------------------------------------------------------------------------------------------------------------
+Question 2:
+Consider the function f defined below. 
+struct item
+{
+int data;
+struct item* next; 
+};
+int f(struct item *p)
+{
+return( (p == NULL) || (p ―> next == NULL) || ((p ―>data <= p ―>next―> data) && f(p―> next)) );
+}
+For a given linked list p, the function f returns 1 if and only if:
+Answer: Elements in the list are sorted in non-decreasing order of value.
+-------------------------------------------------------------------------------------------------------------------------------------------
+Question 3:
+Let P be a singly linked list. Let Q be the pointer to an intermediate node x in the list. What is the worst-case time complexity of the best-known algorithm to delete the node x from the list?
+Answer: O(n)
+-------------------------------------------------------------------------------------------------------------------------------------------
+Question 4:
+The following C function takes a singly-linked list of integers as a parameter and rearranges the elements of the list. The list is represented as pointer to a structure. The function is called with the list containing the integers 1, 2, 3, 4, 5, 6, 7 in the given order. What will be the contents of the list after the function completes execution? 
+struct node {int value; struct node *next;);
+void rearrange (struct node *list
+{
+struct node *p, *q;
+int temp;
+if (!list I I !list -> next) return;
+p = list;
+q = list -> next;
+while (q)
+{
+temp = p ―> value;
+p ―> value = q ―> value;
+q ―> value = temp;
+p = q ―>next;
+q = p ? p ―> next : 0;
+}}
+Answer: 2,1,4,3,6,5,7
+-------------------------------------------------------------------------------------------------------------------------------------------
+Question 5:
+The following C function takes a singly-linked list as input argument. It modified the list by moving the last element to the front of the list and returns the modified list. Some part of the code is left blank.
+typed of struct node
+{
+int value;
+struct node *next;
+} Node;
+Node *mode_to_front (Node *head) {
+Node *p, *q;
+if((head = = NULL) || (head ―> next = = NULL))
+return head;
+q = NULL;
+p = head;
+while (p ―>next ! = NULL)
+q=p;
+p = p-next; }
+_________________
+return head;
+}
+Choose the correct alternative to replace the blank line.
+Answer: q->next=NULL; p-> next = head; head = p;
+-------------------------------------------------------------------------------------------------------------------------------------------

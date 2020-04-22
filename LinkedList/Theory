@@ -37,4 +37,47 @@ To imporove Linear Search:
 Insertion in a Linked List:
 1)Insert before the first place
 2)Insert at a given position
+-----------------------------------------------------------------------------------------------------------------------------------------
+Reversing a Linked List:
+1)Reversing the elements
+Take an array, store all the values and reverse copy them in the Linked List.
+2)Interchanging the Links
+-----------------------------------------------------------------------------------------------------------------------------------------
+Circular Linked List
+A Circular linked list can't be null.
+We have a head node which has no data but is used to access all the other nodes.
+While inserting: 1)INserting before Head
+		 2)Inserting at other position
+If we insert just after Head node, it will take constant time.
+-----------------------------------------------------------------------------------------------------------------------------------------
+Comparison of Linked List
+1)Linear Singly LL can be used for Queue
+2)Circular Singly LL
+2)Linear Doubly LL
+4)Circular Doubly LL- Very versatile and can move in either direction but takes extra space.
+Doubly LL needs double the space for pointers as compared to Singly LL.
+Inserting before head in Singly Circular takes TC= O(n).
+-----------------------------------------------------------------------------------------------------------------------------------------
+Array vs Linked List
+Array can be created in Stack and Heap.
+LL is always created in Heap.
+Array is fixed length, LL is flexible.
+In array, you can access randomly but LL can only be accessed sequentially.
+Insertion: Array - O(1) to O(n) Linked List - O(1) to O(n)
+In Array we move the elements but in Linked List, we shift the pointers.
+Both are equally efficient in deleting or inserting.
+Binar Search will be inefficient in Linked List. TC = O(n log n)
+Insertion Sort and Merge Sort suitable for Linked List.
+-----------------------------------------------------------------------------------------------------------------------------------------
+We have to find the intersecting node by traversing from backwards.
+-------------------------------------------------------------------------------------------------------------------------------------------
+For conversion of Sparse Matrix to Linked List:
+1)We create an array equal to the number of rows in the matrix.
+2)For representing non-zero numbers we need a node containing column number and value of the element.
+We create an Array of Linked Lists.
+Every Node has column number, Value and pointer to next node.
+
+To traverse backwards we use Stack.
+We store the addresses in a Stack.
+We pop the address out one by one and the compare the addresses, if they turn out to be different we find the intersecting node.
 

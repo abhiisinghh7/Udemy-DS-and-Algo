@@ -1,4 +1,4 @@
-//Inserting in a Linked List
+//Deleting in a  Linked List
 #include <stdio.h>
 #include <stdlib.h>
 struct Node
@@ -28,51 +28,51 @@ void Display(struct Node *p)
 while(p!=NULL)
 {
 printf("%d ",p->data);
-p=p->next;
-}}
-void Insert(struct Node *p, int pos, int key){
-struct Node *t;
-t=(struct Node *)malloc(sizeof(struct Node));
-t->data=key;
-if(pos==0)
-{
-t->next=first;
-first = t;
-}
-else if(pos>0){
-p=first;
-for(int i=0;i<pos-1 && p!=NULL;i++){
 p=p->next;}
-t->next=p->next;
-p->next=t;}}
-//TC=O(n)
-void InsertLL(struct Node *p,int index,int x)
+}
+void RDisplay(struct Node *p)
 {
-struct Node *t;
-int i;
-t=(struct Node *)malloc(sizeof(struct Node));
-t->data=x;
-if(index == 0)
+if(p!=NULL)
 {
-t->next=first;
-first=t;
+RDisplay(p->next);
+printf("%d ",p->data);
+}
+}
+int Delete(struct Node *p,int index)
+{
+struct Node *q=NULL;
+int x=-1,i;
+if(index==1)
+{
+q=first;
+x=first->data;
+first=first->next;
+free(q);
+return x;
 }
 else
+//We need 2 pointers one for the node to be deletedn or dealocate memory, one for the previous node.
 {
 for(i=0;i<index-1;i++)
+{
+q=p;
 p=p->next;
-t->next=p->next;
-p->next=t;
 }
+//q is following p
+//q has address of p's next, and p is emoved and memory freed.
+q->next=p->next;
+x=p->data;
+free(p);
+return x;}
 }
 int main()
 {
 int A[]={10,20,30,40,50};
 create(A,5);
 Display(first);
-Insert(first,5,60);
-printf("\n After Insertion \n");
-InsertLL(first,0,5);
+printf("\n");
+printf("After Deletion \n");
+Delete(first,2);
 Display(first);
 return 0;
 }
