@@ -1,0 +1,45 @@
+FIFO - First In First Out
+Insertion done from one end, deletion done from the other end.
+Queue ADT:
+Data:
+1)Space for Storing Data
+2)Front for Deletion
+3)Rear for Insertion
+Operations:
+1)enqueue(x) Insert an Element
+2)dequeue() Delete Element
+3)isEmpty() 
+4)isFull(0
+5)first()
+6)last()
+Can be implemented using:
+1)Array
+2)Linked List
+We will implement using:
+1. Single Pointer
+Insert O(1)
+Delete O(n)
+2. Using front and Rear
+Insert O(1)
+Delete O(1)
+front = rear =-1[Initial]
+if(front == rear)[Empty]
+if(rear == size - 1)[Full]
+-------------------------------------------------------------------------------------------------------------------------------------------
+Drawback of Queue using Array:
+We cannot reuse the spaces of deleted elements in the Array.
+Every position/space in the Array can be used only once.
+Solution:
+1)Resetting Pointers
+Every time, we delete elements we need to reset pointers and bring front and rear at -1
+2)Circular Queue
+We will move front and rear circularly by using 'mod' operator.
+Rear=(Rear + 1)%size
+-------------------------------------------------------------------------------------------------------------------------------------------
+Double Ended Queue
+We can use both the pointers for both Insertion and Deletion.
+Priority Queue:
+1)Limited set of Priorties
+2)Element Priority
+
+

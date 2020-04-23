@@ -1,0 +1,37 @@
+Question 1:
+Consider the following statements:
+(i) First-in-first out types of computations are efficiently supported by STACKS.
+(ii) Implementing LISTS on linked lists is more efficient than implementing LISTS on an array for almost all the basic LIST operations.
+(iii) Implementing QUEUES on a circular array is more efficient than implementing QUEUES on a linear array with two indices.
+(iv) Last-in-first-out type of computations are efficiency supported by QUEUES.
+Answer: [two] and [three] are true.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Question 2:
+Consider the following function:
+void f (queue Q) {
+int i;
+if (! is Empty (Q)) {
+i = delete (Q); f(Q);
+insert (Q, i);
+}}
+What operation is performed by the above function f ?
+Answer :Reverses the order of elements in Queue
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Question 3:
+Suppose a circular queue of capacity (n - 1) elements is implemented with an array of n elements. Assume that the insertion and deletion operations are carried out using REAR and FRONT as array indeed variables, respectively. Initially, REAR = FRONT = 0. The conditions to detect full and queue empty are
+Answer : (REAR + 1)mod n == FRONT :Full
+	 	REAR = FRONT      :Empty
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Question 4:
+Consider the following operation along with Enqueue and Dequeue operations on queues, where k is a global parameter.
+Multi -Dequeue (Q) {
+m = k;
+while (Q is not empty) and (m > 0) { 
+Dequeue (Q);
+m = m — 1; }}
+What is the worst case time complexity of a sequence of n queue operations on an initially empty queue?
+Answer : O(n)
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Question 5:
+A queue is implemented using an array such that ENQUEUE and DEQUEUE operations are performed efficiently. Which one of the following statements is CORRECT (n refers to the number of items in the queue)?
+Answer : Both operations TC = O(n)
