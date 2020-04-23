@@ -1,0 +1,36 @@
+Question 1:
+The following sequence of operations is performed on a stack:
+PUSH (10), PUSH (20), POP, PUSH (10), PUSH(20), POP, POP, POP, PUSH (20), POP 
+The sequence of values popped out is:
+Answer: 20,20,10,10,20
+-------------------------------------------------------------------------------------------------------------------------------------------
+Question 2:
+Which of the following permutations can be obtained in the output (in the same order) using a stack assuming that the input is the sequence 1, 2, 3, 4, 5 in that order?
+Answer: 3,4,5,2,1
+-------------------------------------------------------------------------------------------------------------------------------------------
+Question 3:
+The postfix expression for the infix expression 
+A + B * (C + D)/F + D * E is
+Answer :ABCD+*F/+DE*+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Question 4:
+Which of the following is essential for converting an infix expression to the post fix form efficiently?
+Answer: An Operator Stack
+-------------------------------------------------------------------------------------------------------------------------------------------
+Question 5:
+Let S be a stack of size n ≥ 1. Starting with the empty stack, suppose we push the first n natural numbers in sequence, and then perform n pop operations. Assume that Push and Pop operation take X seconds each, and Y seconds elapse between the end of one such stack operation and the start of the next operation. For m ≥ 1, define the stack-life of m is the time elapsed from the end of push(m) to the start of the pop operation that removes m from S. The average stack-life of an element of this stack is
+Answer :n(X + Y) - X
+-------------------------------------------------------------------------------------------------------------------------------------------
+Question 6:
+A single array A[1...MAXSIZE] is used to implement two stacks. The two stacks grow from opposite ends of the array. Variables top1 and top2 (top1 < top2) point to the location of the topmost element in each of the stacks. If the space is to be used efficiently, the condition for "stack full"is
+Answer: top 1 = top 2 - 1
+------------------------------------------------------------------------------------------------------------------------------------------- 
+Question 7:
+Assume that the operators +, -, × are left associative and  ^ is right associative. The order of precedence (from highest to lowest) is ^, × , +, -. The postfix expression corresponding to the infix expression a+b ×  c - d^ e^ f is
+Answer :abc×+def^^-
+-------------------------------------------------------------------------------------------------------------------------------------------
+Question 8:
+The following postfix expression with single digit operands in evaluated using a stack
+8 2 3 ^ / 2 3* + 5 1*-
+Note that ^ is the exponentiation operator. The top two elements of the stack after the first * is evaluated are
+Answer : 6,1

@@ -1,0 +1,38 @@
+LIFO: Last In First Out
+Recursion uses Stack.
+Data:   1. Space for Storing elements
+	2. Top pointer
+Operations:
+1. Push(x) - Inserting a value
+2. Pop() - Deleting a Value
+3. Peek(Index) - Knowing a value at an particular Index
+4. StackTop() - Knowing what's at the top of the Stack
+5. isEmpty() - To check if the stack is Empty
+6. isFull() - To check if the Stack is Full
+We implement a stack using two types of physical data structures:
+1. Array
+2. Linked List
+Time taken by Push and Pop operation are constant. Peek operation takes linear time.
+While implementing Stack by Linked List we will always add Node from left hand side or Head side as time taken is constant. TC = O(n) 
+Applications of Stack:
+1) Parenthesis Matching
+Push opening brackets and pop them out for every closing bracket.
+3 methods of writing a notation:
+1)Infix
+Operand Operator Operand
+2)Prefix
+Operator Operand Operand
+3)Postfix
+Operand Operand Operator
+Put proper brackets and then follow the rules of the operation as above.
+Precedence: 1) +&- L~R 2) *&/ L~R 3) ^ R~L 4) -(Unary minus) R~L 5) () L~R
+If precendence is same, parentheses is done as per the trules of Associativity.
+While converting Infix to Postfix if precedence of the operator in the stack is greater or equal to then pop out and put it in the result Array else push it into Stack.
+While considering Operands assume they have the highest precedence compared to the operators and work accordingly.
+If L~R precedence will increase if it goes in the stack but if it is R~L, the precedence will decrease.
+Evaluation of Postfix:
+1)If Operand, push it into Stack.
+2)If Operator, pop out 2 symbols and perform the operation.
+While popping out, the 1st symbol becomes the 2nd operand and the 2nd symbol becomes the 1st operand in the operation.
+Precedences and Associativity are used for Parenthesis and don't decide which operator gets executed first.
+
