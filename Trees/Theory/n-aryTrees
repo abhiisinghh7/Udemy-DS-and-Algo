@@ -1,0 +1,14 @@
+n- Degree of a Tree
+Remember: Degree of a Tree is predefined.
+Strict n-ary Tree
+Every node has 0 or n children.
+Height vs Nodes
+For 'm' degree Tree
+For Height h:
+Minimum Nodes n = m*h+1
+Maximum Nodes n = [(m^(h+1)-1)/(m+1)]
+For n Nodes:
+Minimum Height= {log(base m)[n*(m-1)+1]}-1
+Maximum Height= (n-1)/m
+Internal vs External Nodes
+EXternal Nodes = (m-1)Internal Nodes + 1

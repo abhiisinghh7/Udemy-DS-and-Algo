@@ -1,0 +1,19 @@
+Tree is a collection of node, vertices and edges.
+If there are n vertices then there will be (n-1) edges.
+Every node has a edge coming from a parent except the root.
+Terminology:
+1)Root: First node of the top of tree
+2)Parent: Those nodes which have an edge from top to down have nodes below them.
+3)Child: Those descendents connected from top
+4)Siblings: Children of same parent
+5)Descendents: All those nodes which can be reached from a particular node.
+6)Ancestors: All those nodes intermediate to a particular node and the root of the tree.
+7)Degree of a Node: The number of direct children of a node.
+8)Degree of a Tree: It is predefined. Mininum possible value of degree of the Tree is the maximum possible value of degree of a node in the tree.
+9)Internal/External Nodes: Also known as Leaf/Non-Leaf nodes. Nodes with Degree=0 are called Leaf nodes or External Nodes or Terminal nodes.
+Rest of nodes are called eith Non-Leaf or Internal nodes.
+10)Levels: Starts from root(level 1) wrt Nodes. Children of root are level 2 and so on. We check it horizontally.
+11)Height of a Tree: We count edges starting from root where Height = 0. 
+12)Forest: Collection of Trees.
+
+

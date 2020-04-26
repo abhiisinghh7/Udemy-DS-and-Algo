@@ -1,0 +1,15 @@
+Height vs Nodes
+Minimum nodes = 2 Maximum = 3 for Height = 1
+Minimum nodes = 3 Maximum = 7 for Height = 2
+Minimum Nodes = (n+1)
+Maximum Nodes = (2^(h+1)) - 1 (Forms a GP)
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Minimum height = 1 Maximum = 2 for Nodes = 3
+Minimum height = 2 Maximum = 6 for Nodes = 7
+Maximum Height = (n-1)
+Minimum Height = [log{base 2}(n+1)]-1
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Internal Nodes vs External Nodes
+No. of Nodes with deg(0)= deg(2) + 1
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+

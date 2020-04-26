@@ -6,4 +6,6 @@ Go to Debug, Select Debugging options, Select a Watch
 If any variable is not showing right-click the variable and click 'Watch varaiable-name'
 Click F7 to execute it line by line.
 
+To remove empty lines in any file:
+sed -i '/^$/d' [filename]
 

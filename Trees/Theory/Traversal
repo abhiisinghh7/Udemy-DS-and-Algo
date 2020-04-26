@@ -1,0 +1,90 @@
+Types of Traversal:
+1)Pre-Order: visit(node),Preorder(left subtree),Preorder(right subtree)
+2)In-Order: Inorder(left),visit(node),Inorder(right)
+3)Post-Order: Postorder(left),Postorder(right),visit(node)
+4)Level-Order: level by level
+eg: 
+Preorder: A,B,C
+Inorder: B,A,C
+Postorder: B,C,A
+Level: A,B,C
+Trick: Break the bigger tree into smaller sub-trees.
+First element of preorder = last element of postorder.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+PreOrder: 
+Connect from the left side of the node starting from left hand-side to the bottom line and then write them down in that order.
+Scan left to right and take all the elements.
+InOrder:
+Connect from the bottom of the node to the bottom line.
+Scan the elements on the line from left to right.
+PostOrder:
+Connect lines from RHS of node starting from right to the right side of the bottom line.
+Scan left to right and take all the elements.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+PreOrder:
+Every node, draw a line on left-hand side.
+Start from the top and go along the boundary of the tree.
+Write the nodes in order as you cross them.
+InOrder:
+Every Node, draw a line at the bottom of each node.
+Then, again, go through the boundary of the tree.
+Write the nodes in  order as you cross them.
+PostOrder: 
+Every Node, draw a line at the right-hand side of each node.
+Then, again, go through the boundary of the tree.
+Write the nodes in  order as you cross them.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Pre-Order:
+Start from root and take your finger around this tree.
+Finger points towards RHS of page.
+Write the nodes down that the finger points in focus.
+In-Order:
+Start from root and take your finger around this tree.
+Finger points towards top of page.
+Write the nodes down that the finger points in focus.
+Post-Order:
+Start from root and take your finger around this tree.
+Finger points towards LHS of page.
+Write the nodes down that the finger points in focus.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Iterative preorder:
+We use a Stack.
+Print Data, go to left child.
+Store the address of the nodes that you just printed, push the address in Stack.
+Pop out address, go to RHS and when current pointer = NULL, again pop out and continue.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Iterative Inorder:
+We use a Stack.
+Push address, go to left child.
+Pop out, print data of the address.
+Move pointer to right child.
+Repeat.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Iterative Postorder:
+We use a Stack.
+Push address, go to left child.
+If current pointer NULL, pop out and go to right child.
+Again push address to move to right child.
+If you're storing the same address, store it in the negative value, so that while you pop second time, you print the data.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Iterative Level-Order
+We use a Queue.
+First, Visit Root. Insert Address of root.
+Then visit, Left child(insert it's address) and right child(insert it's address)
+Take out address, visit left child and right child.
+Also every time you enter the address, write the data in the output.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Generate a Tree from Traversal
+So from Preorder, 5 possibilities for 3 elements.
+If only Preorder- Catalan number of trees possible: [2nCn/(n+1)]
+PreOrder+PostOrder= No unique tree possible.Multiple trees possible.
+PreOrder+InOrder or PostOrder+Inorder= Unique Tree[As Inorder has root in the middle]
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+InOrder + PreOrder
+Write the Inorder as it is.
+Scan Preorder one element at a time.
+Take the first element in prorder as the root node.
+Then divide the tree into subtrees wrt the first node in Preorder traversal.
+TC= O(n^2)
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+

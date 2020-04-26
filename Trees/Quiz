@@ -1,0 +1,22 @@
+Which of the following statements is false?
+a)A tree with n nodes has (n-1) edges.
+b)A labeled rooted binary tree can be uniquely constructed given it's postorder and preorder traversal results.
+c)A complete binary tree with n internal nodes has (n+1) leaves.
+d)The maximum number of nodes in a binary tree of height h is [(2^(h+1))-1]
+Answer: B
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Question 2:
+A complete n-ary tree is one in which every node has 0 or n sons. If x is the number of internal nodes of a complete n-ary tree, the number of leaves in it is given by
+Answer:x(n-1)+1
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Question 3:
+Consider the following nested representation of binary trees: (X Y Z) indicates Y and Z are the left and right subtrees, respectively, of node X. Note that Y and Z may be NULL, or further nested. Which of the following represents a valid binary tree? 
+Answer: (1(234)(567))
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Question 4:
+Let LASTPOST, LASTIN and LASTPRE denote the last vertex visited in a postorder, inorder and preorder traversal. Respectively, of a Full binary tree. Which of the following is always true? 
+Answer: LASTIN=LASTPRE
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Question 5:
+The number of leaf nodes in a rooted tree of n nodes, with each node having 0 or 3 children is
+Answer:[(2n+1)/3]

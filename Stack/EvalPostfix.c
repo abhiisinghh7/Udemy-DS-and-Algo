@@ -91,7 +91,7 @@ if(isOperand(infix[i]))
 postfix[j++]=infix[i++];
 else
 {
-if(pre(infix[i])>pre(top->data))
+if(pre(infix[i])>pre('0'))
 push(infix[i++]);
 else
 {
@@ -119,10 +119,11 @@ else
 x2=pop();x1=pop();
 switch(postfix[i])
 {
-case '+':r=x1+x2;
-case '-':r=x1-x2;
-case '*':r=x1*x2;
-case '/':r=x1/x2;
+//Use break while using Switch else if one case satisfies, rest all subsequent cases will be executed.
+case '+':r=x1+x2; break;
+case '-':r=x1-x2; break;
+case '*':r=x1*x2; break;
+case '/':r=x1/x2; break;
 }
 push(r);
 //We push the result back in the stack
@@ -132,8 +133,9 @@ return top->data;
 }
 int main()
 {
-char *infix="2+3";
+char *infix="2+3*5";
+printf("Infix Expression \n%s\n",infix);
 char *y=InToPost(infix);
-//printf("%s",y);
-//printf("Result is %d\n",Eval(postfix));
+printf("Infix converted to postfix expression:\n%s",y);
+printf("\nResult is %d\n",Eval(y));
 return 0;}

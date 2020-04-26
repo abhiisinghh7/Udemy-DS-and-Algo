@@ -1,0 +1,13 @@
+Full vs Complete Binay Tree
+Full: Binary tree of height 'h' having maximum no. of Nodes.
+Height h = {2^(h+1)}-1 nodes
+Complete:
+No blank spaces in between while representing the elements in an Array.
+A complete Binary Tree of Height 'h' will be a full Binary tree upto height 'h-1' and on the last level elements will be filled from left to right without any missing elements. 
+A full Binary Tree is always a Complete Binary Tree.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Strict vs Complete Binary Tree
+Strict: Every node has either 0 or 2 degree.
+Complete: No blank spaces in between while representing the elements in an Array.
+Sometimes Strict is also known as Complete Binary Tree and in that case Complete BT is known as 'Almost Complete BT'.
+

@@ -1,0 +1,27 @@
+We need to store elements and preserve relationship between them.
+We store the elements in array level by level.
+Element | Index | Left Child | Right Child
+A       |   1   |     2      |      3
+B       |   2   |     4      |      5
+C       |   3   |     6      |      7
+#       |   i   |    2i      |     2i+1
+If any element is at index 'i':
+Left child is at index '2i'
+Right Child is at index '2i+1'
+Parent of any node will be at [i/2]
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Linked Representation:
+struct Node{
+struct Node *lchild;
+int data;
+struct Node *rchild;};
+If 'n' nodes, 'n+1' null pointers for all the leaf nodes.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+How to create BT:
+1)Create a Queue
+2)Create root node
+3)Enter the address in the queue.
+4)If left child, enter the address of left child in the Queue.
+5)If right child, enter the address of right child in the Queue.
+Or: If value = -1 there is no child.
+6)Take out the addresses from the Array and check if they have children.

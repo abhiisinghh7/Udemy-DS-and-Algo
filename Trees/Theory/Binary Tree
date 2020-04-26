@@ -1,0 +1,30 @@
+Binary Tree
+A Tree of degree 2 where each node can have at max 2 children.
+deg(T)=2
+We give names as left child and right child.
+Children= {0,1,2}
+Left Skewed Tree- A tree with only left children.
+Right Skewed Tree- A tree with only right children.
+Number of Binary Trees with n-nodes
+Labelled Nodes: Labelled with alphabets or numbers
+Unlabelled Nodes: No labelling 
+T(3)= 5 Total 5 different possibilities of Binary Trees
+T(4)= 14 Total 14 different possibilities of Binary Trees
+No. of Trees = T(n)= {(2nCn)/(n+1)} = {Sigma(i = 1 to n)[T(i-1)*T(n-i)]}
+No. of trees possible with maximum height = (2^2)= 4
+For labelled nodes: T(n)= {(2nCn)*(n!)/(n+1)} As we take in account the arrangment of nodes
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Strict Binary Tree
+A node can have 0 or 2 children. 1 children is not permitted.
+Height = 2 Minimum Nodes = 5 Maximum = 7
+Height = 3 Minimum Nodes = 7 Maximum = 15
+Height = 4 Minimum Nodes = 9 Maximum = 31
+Maximum nodes same as BT formula.
+Minimum Nodes= (2*n+1)
+Maximum Nodes= (2^(h+1)-1)
+If Height 'h' is given:
+Minimum Height = {log(base 2)[n+1]-1}
+Maximum Height = [(n-1)/2]
+Internal vs External Nodes
+No. of External Nodes = 1 + No. of Internal Nodes
+
