@@ -1,0 +1,15 @@
+Height vs Nodes Analysis of AVL Trees
+If Height is given:
+Minimum Nodes:
+h =   | 1 | 2 | 3 | 4 | 5  | 6  | 7  |
+N(h)= | 1 | 2 | 4 | 7 | 12 | 20 | 33 |
+N(h)= N(h-2) + N(h-1) + 1 but B(h)=0 for h=0 and N(h)=1 for h=1
+Maximum Nodes= 2^(h)-1 as 'h' starts from 1
+----------------------------------------------------------------------------------------------------------------------------
+If Nodes is given:
+Minimum Height h = log[base 2](n+1)
+Maximum Height h= Look in the Table above 
+Same as fibonacci series formulae.
+If you take any two consecutive elements in Fibonacci series, 
+The ratio will be approximately 1.6
+ 

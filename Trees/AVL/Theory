@@ -1,0 +1,39 @@
+These are height balanced BST.
+AVL is a perfect Binary Search Tree.
+Balance Factor= Height of left subtree - Height of right subtree
+bf=hl-hr={-1,0,1}=|hl-hr|<=1
+It is calculated on every node of BST.
+If |bf|>1 imbalanced
+If any one node is imbalanced we say tree is imbalanced.
+You will never get balance factor as 3 or more.
+To decide what kind of imbalance, we see the imbalanced node, then we check the direction of insertion of new node that made the tree imbalanced, then we move towards that and select 3 nodes for rotation. leave the rest of the nodes.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Name of imbalance: LL or Left of Left imbalance
+If imbalance on left side, pull the thread and rotate to Right side or sort of Clockwise rotation.
+After rotation, it is balanced. 
+Around the node that you perform rotation, bf of that node will become 0.
+Rotations are always done with 3 nodes.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Name of imbalance: RR or Right of Right imbalance
+If imbalance on right side, pull the thread and rotate to Left side or sort of counter-Clockwise rotation.
+After rotation, it is balanced. 
+Around the node that you perform rotation, bf of that node will become 0.
+Rotations are always done with 3 nodes.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Name of imbalance: LR or Left of Right imbalance
+First rotation around the middle node towards left, counter-clockwise rotation then perform right or clockwise rotation.
+This is an example of double rotation.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Name of imbalance: RL or Rightt of Left imbalance
+First rotation around the middle node towards Right, clockwise rotation then perform left or counter-clockwise rotation.
+This is an example of double rotation.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Using 3 keys we can form 5 BST
+4 trees of larger height=2, 1 of height=1 as only one is balanced.
+Formula of Rotation for Insertion
+LL Rotation
+We consider only 3 nodes for rotation. 2 nodes from the imbalanced node.
+The, we rotate around the imbalanced node.
+LR Rotation
+Direct method- C moves up, A moves to RHS.
+We don't disturb the relations of rest of the nodes, if any node becomes root, the place the child as the children of the root and don't disturb the children of the displaced node.

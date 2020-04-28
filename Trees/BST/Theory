@@ -1,0 +1,28 @@
+Binary Search Tree
+It is a Binary Tree useful for searching.
+Value of (left Child < Root < Right Child)
+Search time depends on Height. TC= O(h) or (log n)
+There are no duplicates allowed.
+InOrder gives sorted order.
+BST is represented using Linked representation.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+While deleting from a Binary Tree,
+a)If we delete a leaf node(with 0 child) no issue
+b)If we delete root node, either the Inorder sucessor or the inorder predecessor with take it's place.
+If we delete any node, physically the leaf node is deleted and the rest of the nodes the value is interchanged as per the inorder sucessor or predecessor.
+We recursively delete the leaf node in the end.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+BST using PreOrder
+Initial Step: Create 1st node
+If next node is smaller, make it left child.
+Push address into the stack.
+If next node is greater the the last node which was made but smaller than top most element in the stack, then the new node will be the right child.
+Pop out the address from the stack.
+If right child, don't push address in the stack.
+If next node, is greater than current node and also greater than the topmost element in the stack, pop out the address and move current node node to that address.
+Then again compare with top most element in stack.
+TC= O(n)
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Drawbacks of BST:
+Height of BST varies from O(log n) to O(n)
+There is no control over height of BST, it depends on how you are entering the elements.
