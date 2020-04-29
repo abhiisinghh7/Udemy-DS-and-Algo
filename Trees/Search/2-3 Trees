@@ -1,0 +1,36 @@
+2-3 trees are Search trees like BST.
+2 keys 3 children
+Multiway search Trees
+m-way search way. [m-Degree of a Tree]
+2-3 trees are balanced height search trees of degree 3.
+Also called as B-Tree
+All the leaf nodes are at the same level.
+Every node must have {n/2} children {}-approx to next largest integer.
+All the keys must be in sorted and all elements must be unique.
+Used in DB softwares or DBMS because if we access a node we can get more than one value also height is smaller than BST
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Create 2-3 Search Tree
+If filled and no space for new node, split the node.
+Then there are 3 keys.
+The middle node becomes the parent and we created total 3 nodes(2 new nodes)
+B-Tree or 2-3 Tree grow upwards to balance the height.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+While Deleting Node:
+Note: First try to borrow, if you can't borrow then merge.
+Note: If root node deleted, Inorder predecessor or Inorder successor will take it's place.
+#SIMPLY DELETE
+a)If leaf node, simply delete the key value.
+#DELETE & MERGE
+a)If deleting element leaves an empty node, merge node with sibling opposite to how we were splitting at the time of insertion.
+b) While deletion, it will shrink downwards, the node that is vacant, the sibling key value is copied to next node and that node is removed.
+#BORROW
+a)If vacant node, before merging, if we can borrow a key from sibling, we can borrow a key via parent and so, key value is deleted.
+b)We don't remove the empty node as we 'BORROW' key value from sibling, through Parent.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+For height 'h':
+Minimum Nodes possible= 2^(h+1)-1
+Maximum Nodes possible= [3^(h+1)-1]/2{Sum of GP}
+For Nodes 'n':
+Maximum Height possible= O(log{base 2}n)
+Minimum Height possible= O(log{base 3}n)
+

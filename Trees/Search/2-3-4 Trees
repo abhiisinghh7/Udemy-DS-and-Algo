@@ -1,0 +1,9 @@
+2-3-4 Trees
+B-Tree of degree 4
+B-Tree is multiway height balanced search tree.
+There can be 2/3/4 children.
+Three keys possible per node.
+Creating a Tree, while splitting if you have even number of nodes then you can either be left biased or right biased.
+For Deletion, there must be atleast 1 key per node and there should be atleast 2 children.
+Rules are similar to deleting in 2-3 Trees.
+Analysis same as 2-3 Tree as it's also a B-Tree.

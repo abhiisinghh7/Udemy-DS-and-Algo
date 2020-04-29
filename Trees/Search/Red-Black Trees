@@ -1,0 +1,52 @@
+1)Height balanced BST similar to 2-3-4 Trees
+2)Every node either Red or Black
+3)Root of a tree is Black.
+4)NULL is also Black.
+5)Similar to AVL tree as we perform rotations if red-black conditions are violated.
+6)Number of blacks on paths from Root to leaf are same or number of blacks in every path are equal.
+7)No 2 consecutive Red, Parent and Children of Red are black.
+8)New inserted node is Red.
+9)Height of tree: log(n) <= h <= 2log(n)
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Creating a Red-Black Tree:
+Inserted node will be a Red node.
+Will happen similar to BST.
+For newly inserted node if Parent is Red, and uncle(sibling of parent) is also Red then recolour.
+If for newly inserted node, parent is Red but uncle is black(NULL), then you have to perform rotation.
+Rotation is performed if there is a Red-Red conflict.
+Rotation are performed over grandparent.
+After recolouring if Grandparent becomes Red, then again check ancestors for conflict.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Types of Rotation:
+1)Zig-Zig Rotation
+Type of LL or RR rotation. 
+Where parent becomes the root and the root becomes the uncle and the new node takes place of the parent.
+2)Zig-Zag Rotation
+Type of RL or LR rotation.
+Where the new node is tilted opposite to the direction of parent.
+Same as above,parent becomes the root and the root becomes the uncle and the new node takes place of the parent.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Deletion in Red-Black Tree:
+Similar to BST.
+Search for Node.
+a)If leaf Node, simply delete the node.
+If some other node, don't delete the node, delete the value, some other value will take it's place.
+Eventually leaf node, get deleted.
+As for the value that's deleted, the inorder predecessor or the inorder sucessor takes it's place.
+When you're deleting from BST either it will be a leaf node or it will have exactly 1 child. It can't have 2 children.
+While deleting:
+a)If it is a Red Node and doesn't have any children, simply delete and don't do any changes.
+If the Red Node has a child(black) simply it will take it's place.
+b)If you're deleting a Black Node:
+Check Sibling.
+If sibling is Red, delete the node and perform rotation.
+It's child will take it's place.
+Either LL or RR rotation. 
+If Sibling is Black, you have multiple choices.
+If both children are black, simply change colour of the sibling to Red and parent to Black.
+If children of sibling(one or two) are Red, then perform Rotation.
+If left child, Zig-Zag rotation.
+If right child, Zig-Zig rotation.
+If both available, Zig-Zig rotation.
+Note: We are bothered about the number of black nodes along every path.
+While rotating, depends on the child that is available.

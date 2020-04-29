@@ -1,0 +1,13 @@
+If Red-Black Tree if a node is of Red colour then it means if it was a 2-3-4 Tree then that node would be a part of parent Black node.
+The parent black node would have multiple keys which are the Red keys in extension.
+As Red-Black tree are like Binary Tree and every node has a single key.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Comparison of Deletion:
+a) If red node, directly deleted.
+Also, in 2-3-4 that key can be deleted easily as that node will be having multiple keys, so issue.
+Red nodes don't affect 2-3-4 Trees.
+b)If Black node deleted, either inorder successor or inorder predecessor will take it's place.
+In Red-Black rules are to followed.
+In 2-3-4 we merge the empty node with the help of Borrow via parent.
+Swapping colours is similar to merging the nodes.
+Red-Black tree is a Binary tree with 1 key but performing like 2-3-4 Tree.

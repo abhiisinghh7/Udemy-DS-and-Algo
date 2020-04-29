@@ -19,7 +19,7 @@ enqueue(&q,root);
 while(!isEmpty(q))
 {
 p=dequeue(&q);
-printf("Enter left child of %d\n ",p->data);
+printf("Enter left child of %d\n",p->data);
 scanf("%d",&x);
 if(x!=-1)
 {
