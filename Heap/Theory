@@ -1,0 +1,60 @@
+BINARY HEAP
+Condition of Heap-Complete Binary Tree 
+It means if it is represented in Array, then there should be no blank spaces.
+Heap is a complete Binary Tree, height of order log(n)
+Node at index 'i'
+Left Child at index '2*i'
+Right Child at index '2*i + 1'
+Every node should have the element greater than or equal to all it's descendents - MAX HEAP
+Duplicates are allowed.
+Every node should have the element less than or equal to all it's descendents - MIN HEAP
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+INSERTING IN A HEAP
+In Max Heap:
+If the largest element is inserted, it is inserted at root.
+Now, new element inserted at next free space in the array as we want to maintain a complete BT.
+Now in digramatic representation, new element will be a leaf node as per the array.
+Now, we have to rearrange the elements and move it up till it beacomes a MAX HEAP.
+Compare with parent and if it's greater and then move it up untill it has arranged itself.
+Similarly, make the changes in the Array representation.
+Insertion Time = log(n){base 2}
+In-place Heap Creation: We don't need an extra array for creating heap.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+While creating a heap, we take the elements in an Array. 
+We assume the 1st element to be in the heap and then take elements one by one and insert them in the heap.
+All the adjustments are done in the same array.
+Time taken = n*log(n)
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Deleting from a Heap
+From Heap, you can delete only root element or the largest element or the highest priority element.
+After deleting, copy the last element in-order to the root position and delete that leaf node which becomes empty.
+Now, adjust the elements to form MAX HEAP.
+Compare children of new root, compare the greater children with new root and if root is smaller, swap them. 
+Compare root with children and if greater, interchange and move the root element down untill it takes it's position.
+Time= log(n)
+Total Time= n*log(n)
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Heap Sort
+We delete the elements from a Heap, one by one.
+As you go on deleting, use the free space at the end of the array for storing the element you just deleted.
+Finally, you get an array with sorted elements and so, Heap Sort.
+1. Create Heap of n elements.
+2. Delete elements one by one.
+Total Time = 2*n*log(n)
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+HEAPIFY
+Start from last element.
+Start from right to left in the Array representation.
+Compare root to children.
+Then we move them up from the leaf to the children.
+We move from down to up.
+Time Taken= O(n)
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Binary Heap as Priority Queue
+Elements will have their priority and we insert them along with priority and we always delete the element with highest priority.
+We decide beforehand if the smallest number has the highest priority or the largest number has the highest priority.
+Insert time-O(log(n))
+Delete time-O(log(n))
+Heap helps us to implement Priority Queue.
+Also, if smaller element has higher priority, use MIN HEAP
+
