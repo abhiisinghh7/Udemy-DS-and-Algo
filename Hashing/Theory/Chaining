@@ -1,0 +1,16 @@
+Open Hashing
+Hash Function: h(x)=x%10
+Keys inserted at Hash Table.
+A node is created and the value is inserted.
+If multiple entries in a Index, keys inserted in sorted order at the same index.
+Hash Table is made up of array of Linked lists or array of chains.
+If you want to search for an element do [element%10] and then go that index and search for the element.
+The index is found by passing element through the Hash function.
+n=Number of total elements.
+[n/(size of table)]=Lamda(Loading Factor)
+Analysis of Hashing done on the basis of Loading factor.
+We assume the keys are distributed in uniform factor.
+Time taken(Average):
+Successful Search t = [1 + (Lamda)/2]
+Unsuccessful Search t = [1 + (Lamda)]
+Select Hash function such that keys are uniformly distributed.

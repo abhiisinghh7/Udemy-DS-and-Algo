@@ -1,0 +1,38 @@
+LINEAR PROBING
+Closed Hashing
+h(x)=h(x)%10
+h'(x)=[(h(x)+f(i)]%10 where f(i)=i i=0,1,2...
+At collision, try to store at next free space.
+h'(25)=(h(25)+f(0))%10=(5+0)%10=5 //Check at this index
+h'(25)=(h(25)+f(1))%10=(5+1)%10=6 //Next Index
+h'(25)=(h(25)+f(2))%10=(5+2)%10=7 //Next free space, store it
+There may be multiple collisions.
+For searching element, we use the same hash function.
+This method is little time taking.
+Once we get an index by Hash fuction, go to that index and then start searching linearly.
+We should stop a search, once we reach a free space.
+Loding factor should be also less than or equal to 0.5
+Lamda <= 0.5 [practically]
+Time taken:
+Successful: t = [1/(lamda)]*[ln(1/(1-(lamda))]
+Unsuccessful: t = 1/(1-(lamda))
+Drawback:
+Space wasted as lamda<= 0.5
+Clustering may be formed at one place-Primary clustering
+While deleting, shifting is complicated.
+So, while deletion, Re-Hashing- Take out all the keys and re-insert.
+Re-Hashing is very time consuming.
+----------------------------------------------------------------------------------------------------------------------------
+QUADRATIC PROBING
+Open Addressing
+To avoid clustering of elements under Linear Probing, we introduce Quadratic probing.
+h'(x)=[(h(x)+f(i)]%10 where f(i)=(i^2) i=0,1,2...
+h'(43)=(h(43)+f(0))%10=(3+0)%10=3 //Check at this index
+h'(43)=(h(43)+f(1))%10=(3+1)%10=4
+h'(43)=(h(43)+f(2))%10=(3+4)%10=7
+We will be doing exponential probing and we get next location with disance apart.
+We get the location not adjacent and avoid clustering.
+Time taken:
+Successful: t = -[ln(1-(lamda)/(lamda)]
+Unsuccessful: t = 1/(1-(lamda)) 
+

@@ -1,0 +1,11 @@
+Hash Functions
+Selected such the values should be uniformly distributed in a Hash Table.
+1. Mod h(x)= (x % size) + 1 //Better we take size= prime number
+2. MidSquare 
+Take square of the number and take the middle digit.
+3. Folding
+Partiotion the key into parts
+And add the digits to make a single digits
+Then use them for finding Index in Hash Table.
+Again, Folding is useful for if key is a String, then we convert them into Index with the help of the ASCII codes.
+Hash function should always give you the same index while storing and searching.

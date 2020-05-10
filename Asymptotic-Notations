@@ -1,0 +1,10 @@
+1 < (log n) < n < n*(log n) < n^2 < n^3 < ... < 2^n < 3^n ... < n^n  
+Exponential Time Complexities: eg. 2^n,3^n...
+Polynomial Time Complexities: eg. 1,(log n),n...
+If we get time function in such form, we can't get the function directly, we can't write.
+We approximate to a lower or higher value
+If we take lower value, {Omega}( ) : Lower-Bound
+If we take higher value, {Big-Oh}( ) : Upper-Bound
+If we take lower value, {Theta}( ) : Tight-Bound
+If {Big-Oh}(n)={Theta}(n), then it is equal to {Theta}(n)
+It's safe to use {Big-Oh}(n) if we are not sure.

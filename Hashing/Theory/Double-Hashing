@@ -1,0 +1,14 @@
+We will have 2 hash functions.
+One basic Hash function, the second hash function to prevent collision.
+h1(x)= x % 10 //Basic
+h2(x)= R-(x % R) //Secondary function, R is prime number smaller than size of hash table
+eg. R is 7
+Properties of 2nd Hash function:
+1) It should never give a result zero.
+2) It should try to probe all the locations.
+h'x=(h1(x)+i*h2(x))%10 where i = 0,1,2....
+h'(25)= (5+1*3) % 10 = 8 //7-(25%7)= 7 - 4 =3
+h'(15)= (5+1*6) % 10 = 1 //7-(15%7)= 7 - 1 =6
+We get different locations for different keys.
+If we get 2nd collision in Double-Hashing,
+then calculate with new value of 'i' till collision is avoided.

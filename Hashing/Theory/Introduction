@@ -1,0 +1,33 @@
+Hashing Techniques
+1)Why Hashing
+Useful for Searching
+Linear-O(n) and Binary -O(log n)
+Hashing tries to search in less than O(log n) time.
+Requirement for Binary Search- Must be sorted
+Keys are stored at the same index.
+Now to search, go that index and check if present.
+Drawback:
+Extra space required upto the index of largest element.
+Space is wasted.
+Keys should be mapped on Hash Table.
+Mapping:
+1)One to One: h(x)=x
+Every index mapped on to one index in the Hash table.
+We store keys at the index given by the Hash function.
+Ideal Hashing- Time is constant
+Drawback- Space is wasted.
+2)One to Many
+3)Many to One: h(x)=x%10 
+4)Many to Many
+h(x)=x%10 : Hash function modified.
+Drawback- Multiple keys mapped at the same index-Collision.
+Methods to resolve Collision:
+
+#Open Hashing: Chaining
+Consume extra space
+#2Closed Hashing: Open Addressing
+We won't take extra space but adjust in same Array
+We won't strictly store at the place given by has function but other extra space.
+a)Linear Probing
+b)Quadratic Probing
+c)Double Hashing
