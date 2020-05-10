@@ -1,0 +1,26 @@
+Merging
+1. Merging 2 list
+Compare 2 sorted list and merging in the third list.
+Compare A[i] and B[j] and copy the smaller in C[k]
+2. Merging 2 list in Single Array
+2 lists in a single Array and after merging the result in the same array.
+3. Merging Multiple List
+If we select 2 lists at a time- 2 way merging
+If we select m lists at a time- m way merging
+----------------------------------------------------------------------------------------------------------------------------
+Iterative Merge-Sort
+2-way merge sort
+Consider each element is a list
+n-elements= n-lists in one array
+We have to sort and merge them. 
+Total Passes= (log{base 2}n) passes
+Time complexity=(n*log(n))
+----------------------------------------------------------------------------------------------------------------------------
+Recursive Merge-Sort
+As Merge Sort is a recursive procedure, it will break it to a single list and then sort them.
+Divide till it becomes single element each and then merge.
+Height of Tree= (log n)
+Time Complexity(Average)= (n*log(n))
+Merging is done in post-order.
+Space Complexity:
+Uses Stack and Extra Array, Total= (n+ log(n))

@@ -1,0 +1,12 @@
+Equivalent as the heaviest bubble settling down and the lighest bubble(smallest) element on the top.
+Compares consecutive pair of elements.
+When all elements are compared once-Pass.
+On n elements (n-1) comparisons.
+On every pass one element is sorted.
+For n elements, 
+Number of Passes = (n-1) 
+Number of Comparisons = [n(n-1)/2] = O(n^2)
+Number of Swaps = O(n^2)
+Adaptive Algorithm(Not by default)
+Stable Algorithm(Not switching identical elements)
+-----------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,15 @@
+Extension of Insertion Sort.
+Elements are inserted distanced apart.
+gap= {floor[n/2]} where n is the number of elements
+We compare the 1st element and the element at position (gap) placed after the 1st element(can be multiple).
+Switch them if the later element is greater.
+At next pass, New gap= {floor[(previous gap)/2]}
+At each pass, compare element with all the elements at the previous step element.
+Total elements scanned= n elements
+No. of passes = [log{base 2}n]
+Total elements scanned = (n*log{base 2}n)
+Shell Sort useful for scanning very large lists.
+If gap selected as prime numbers, analysed as O[n^(3/2)] or O[n^(5/3)]
+In place sorting-Doesn't take extra space.
+This algorithm is adaptive.
+Comparison based Sorting.

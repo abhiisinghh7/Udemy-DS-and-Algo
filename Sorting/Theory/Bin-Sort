@@ -1,0 +1,13 @@
+Bucket/Bin Sort
+Similar to count sort.
+An extra array size equal to the largest element present.
+That array initialized to NULL.
+Scan original array.
+Drop the element in the particular index
+Every index is a 'bin' or 'bucket' and insert the element.
+Indirectly, we create an array of linked list.
+Empty the original array.
+Scan array of bins and delete element and insert in the original array.
+If already empty, then move to next index.
+Time Complexity = O(n)
+Space Complexity = Extra space for Array of Linked list and the nodes. 

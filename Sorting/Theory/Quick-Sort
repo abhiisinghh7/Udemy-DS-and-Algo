@@ -1,0 +1,24 @@
+Idea that an element is in a sorted position in the list if all the elements present before are smaller and the elements present after are greater.
+pivot-The element that finds out it position.
+i-Element greater than pivot(if smaller/equal it should continue) 
+j-Smaller than or equal to pivot (if greater it should continue)
+Interchange/Swap i and j
+We checked entire list if i>j
+Then, interchange pivot element with jth element.
+Then the pivot element is sorted.
+List is partioned.
+The pivot element=Partitioning Position
+Perform quick sort on both the sides.
+Quick Sort is Recursive.
+Quick Sort will work if there are atleast 2 elements.
+Quick Sort will swap identical elements with itself, so it is NOT adaptive.
+TC= O(n^2) - Worst Case either if it is in Ascending or Descending order
+We represent Quick Sort using a Tree, assuming partioning done in the middle of the array.
+Best Case  - Time= O(n*log(n))  //If partioning in the middle. 
+Worst Case - Time= O(n^2)  //Partioning at Ends(already sorted)         
+Average Case- Time= O(n*log(n))
+We can also select middle element at pivot, we can bring it to the 1st element.
+If we select middle element as pivot, partioning done in the middle.
+If we select random element as pivot-Randomized Quick Sort
+Also known as 'Selection exchange Sort'
+Also known as 'Partition exchange Sort'

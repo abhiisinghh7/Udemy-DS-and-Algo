@@ -1,0 +1,13 @@
+BUBBLE SORT vs INSERTION SORT
+Property		        BUBBLE-SORT | INSERTION-SORT
+Min Comparison | In Ascending  	  O(n)      |      O(n)
+Max Comparison | In Descending    O(n^2)    |      O(n^2)
+Min Swap       | In Ascending     O(1)      |      O(1)
+Max Swap       | In Descending    O(n^2)    |      O(n^2)
+Adaptive			  Yes       |      Yes
+Stable				  Yes 	    |      Yes
+Linked-List			  No        |      Yes
+k Passes			  Yes       |      No
+
+Selection-Sort: Select a position, find a element for that position.
+Quick-Sort: Select an element, find the position suitable for that element.

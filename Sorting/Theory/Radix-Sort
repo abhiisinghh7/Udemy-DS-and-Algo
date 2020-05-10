@@ -1,0 +1,17 @@
+Similar to Bin Sort
+Decimal number system has 0-9 digits.
+So, 0-9 bins are enough for sorting.
+Eg. If octal numbers, 0-8 bins are enough.
+Scan through list of elements.
+Check last digit of number and drop it in that corresponding bin.
+A[i]%10
+Scan through all the bins and extract the numbers in FIFO manner.
+Again, scan through all the numbers and drop them in bins.
+This time, drop on the basis of 2nd digit or at Tens place.
+A[i]%100
+This procedure again repeats for the digit at the next place.
+Finally, extract the elements from all bins and you will get the sorted order.
+Time has increased as the number of passes has increased proportional to the maximum number of digits.
+Only, little extra space is required.
+Time = O(n) 
+Insert and delete functions should take double pointer to a location in bins.

@@ -1,0 +1,12 @@
+Array name as count.
+Size equal to the largest ekement in the unsorted array.
+Initialize the array elements to zero.
+Scan through all the elements in the array.
+Whichever element is present, increment the index of respective element by one in count array.
+The number of times a digit is appearing, we have wriiten at the corresponding index.
+Copy all elements from count array back to original Array.
+Scan count array, if index value non-zero, copy the index in the original array and decrement the value at the index.
+Linear time taking algorithm.
+Space taking algorithm.
+Time Complexity = O(n)
+Space Complexity: Extra space for a new Array.

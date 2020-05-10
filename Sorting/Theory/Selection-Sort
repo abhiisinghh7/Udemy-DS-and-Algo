@@ -1,0 +1,13 @@
+We select a position.
+Then we scan for the respective element(minimum).
+Then we interchange the elements. 
+In 1st pass, we got the smallest element in the list sorted.
+Similarly, for rest of the passes.
+We select a position and scan the list for the suitable element at that particular position.
+In every pass, only a single swap.
+Number of Comparisons =[n(n-1)/2] = O(n^2)
+Number of Swaps =(n-1) = O(n)
+NOT Adaptive Algorithm
+not Stable Algorithm- It swaps the element irrespective if there is an identical element in the list.
+Only Algrothm which sorts the element with minimum number of swaps.
+If I perform k passes, we get k smallest element.

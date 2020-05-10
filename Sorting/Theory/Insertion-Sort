@@ -1,0 +1,12 @@
+Start from last element, if greater, shift the element to the right by 1 space.
+Find where it's appropriate position and insert.
+Time Taken= O(1)~O(n)
+Assume, 1st element is sorted. Remaining elements take out from the Array and insert in the sorted list.
+Number of Passes = (n-1) 
+Number of Comparisons = [n(n-1)/2] = O(n^2)
+Number of Swaps = [n(n-1)/2] = O(n^2)
+If list already sorted,
+Number of Comparisons = O(n)
+Number of Swaps = O(1)
+Adaptive Algorithm(By nature)
+Stable Algorithm- It doesn't shift the element if it is equal

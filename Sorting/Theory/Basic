@@ -1,0 +1,22 @@
+Types of Sorting techniques:
+1. Bubble Sort      
+2. Insertion Sort
+3. Selection Sort
+4. Heap Sort
+5. Merge Sort
+6. Quick Sort
+7. Tree Sort
+8. Shell Sort
+9. Count Sort
+10. Bucket/Bin Sort
+11. Radix Sort
+[1-8]-Comparison based Sorts
+[9-11]-Index based Sorts
+Criteria for Analysis:
+1.Number of Comparisons
+2.Number of Swaps
+3.Adaptive
+If any sorting method is taking less/minimum time on already sorted array.
+4.Stable
+If a sorting algorithm is preserving the order of duplicate elements in the sorted list, then it's stable.
+5.Extra Memory
