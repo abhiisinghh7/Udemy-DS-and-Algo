@@ -1,0 +1,19 @@
+Question 1:
+In a depth-first traversal of a graph G with n vertices, k edges are marked as tree edges. The number of connected components in G is
+Answer: n-k
+---------------------------------------------------------------------------------------------------
+Question 2:
+Let G be a directed graph whose vertex set is the set of numbers from 1 to 100. There is an edge from a vertex i to a vertex j iff either j = i + 1 or j = 3i. The minimum number of edges in a path in G from vertex 1 to  vertex 100 is
+Answer: 7
+---------------------------------------------------------------------------------------------------
+Question 3:
+Let T be a depth first search tree in a undirected graph G. Vertices u and v are leaves of this tree T. The degrees of both u and v in G are at least 2. Which one of the following statements is true?
+Answer: There must exist a cycle in G containing u and all it's neighbours in G
+---------------------------------------------------------------------------------------------------
+Question 4:
+What is the largest integer m such that every simple connected graph with n vertices and n edges contains at least m different spanning trees?
+Answer: 3
+---------------------------------------------------------------------------------------------------
+Question 5:
+Let G of be a graph with n vertices and m edges. What is the tightest upper bound on the running time of Depth First Search on G, when G is represented as an adjacency matrix ?
+Answer: O(n^2)
